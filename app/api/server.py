@@ -9,7 +9,8 @@ import io
 app = FastAPI()
 
 # Load the Hugging Face model
-classifier = pipeline("image-classification", model="google/vit-base-patch16-224")
+# classifier = pipeline("image-classification", model="google/vit-base-patch16-224")
+classifier = pipeline("image-classification", model="google/mobilenet_v2_1.0_224")
 
 @app.post("/classify")
 async def classify_image(file: UploadFile = File(...)):
