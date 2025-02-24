@@ -5,7 +5,8 @@
             "src": "app/api/server.py",
             "use": "@vercel/python",
             "config": {
-                "maxLambdaSize": "50mb"
+                "maxLambdaSize": "50mb",
+                "memory": 1024
             }
         }
     ],
