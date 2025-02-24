@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+transformers
+torch  # or tensorflow if you're using a model that needs it
+Pillow
